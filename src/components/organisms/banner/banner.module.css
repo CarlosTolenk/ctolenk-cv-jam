@@ -5,8 +5,8 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: rgb(226, 45, 60);
-    background: linear-gradient(131deg, rgba(226, 45, 60, 1) 0%, rgba(189, 29, 47, 1) 43%, rgba(71, 4, 11, 1) 100%);
+    background: rgb(116,54,59);
+    background: linear-gradient(131deg, rgba(116,54,59,1) 0%, rgba(189,29,47,1) 29%, rgba(71,4,11,1) 100%);
     position: relative;
 }
 
@@ -15,31 +15,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .containerInformation .title {
-    font-size: 2.6rem;
+    font-size: 2rem;
     color: #fafafa;
     text-align: center;
 }
 
 .containerInformation .typing {
-    font-size: 1.9rem;
-    color: #fafafa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #BCBEC0;
     text-align: center;
 }
 
 .containerInformation .subtitle {
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-style: italic;
     color: #fafafa;
     text-align: center;
+}
+
+
+.containerInformation .anchorBottom {
+    background: #BCBEC0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.containerInformation .anchorBottom .icon {
+    color: #fafafa;
+    width: 40%;
 }
 
 .containerPartial {
     width: 100%;
     height: 100vh;
     position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .containerInformation {
+        width: 50%;
+    }
+
+    .containerInformation .title {
+        font-size: 2.6rem;
+    }
+
+    .containerInformation .typing {
+        font-size: 1.9rem;
+    }
+
+    .containerInformation .subtitle {
+        font-size: 1.7rem;
+    }
 }

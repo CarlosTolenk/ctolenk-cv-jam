@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './banner.module.css';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
+
 // Components
 import BgDynamic from "../../molecules/bg-dynamic/BgDynamic";
 import TypingMessage from "../../molecules/typing-message/TypingMessage"
@@ -24,6 +27,9 @@ const Banner = () => {
                     <h1 className={styles.title}>{title}</h1>
                     <TypingMessage className={styles.typing} message={messages}/>
                     <h4 className={styles.subtitle}>{subtitle}</h4>
+                    <a className={styles.anchorBottom} href="">
+                        <FontAwesomeIcon size="xs" className={styles.icon} icon={faArrowDown}/>
+                    </a>
                 </div>
                 <div className={styles.containerPartial}>
                     <BgDynamic/>

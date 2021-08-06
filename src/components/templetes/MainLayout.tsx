@@ -1,7 +1,10 @@
 import React, {PropsWithChildren} from "react";
 import Head from "next/head";
-import Footer from "../molecules/footer/Footer";
 import styles from "../../../styles/MainLayout.module.css"
+
+// Components
+import Menu from "../molecules/menu/Menu";
+import Footer from "../molecules/footer/Footer";
 
 interface IPropsMainLayout {
     title: string;
@@ -19,7 +22,12 @@ const MainLayout = ({title, description = 'sdsds', children}: IPropsMainLayout) 
             </Head>
 
             <main className={styles.containerMainLayout}>
-                {children}
+
+                <Menu className={styles.containerMenu}/>
+
+                <div className={styles.containerContent}>
+                    {children}
+                </div>
             </main>
 
             <Footer/>

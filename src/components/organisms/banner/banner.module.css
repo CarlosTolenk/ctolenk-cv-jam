@@ -1,0 +1,45 @@
+.containerBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(226, 45, 60);
+    background: linear-gradient(131deg, rgba(226, 45, 60, 1) 0%, rgba(189, 29, 47, 1) 43%, rgba(71, 4, 11, 1) 100%);
+    position: relative;
+}
+
+
+.containerInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.containerInformation .title {
+    font-size: 2.6rem;
+    color: #fafafa;
+    text-align: center;
+}
+
+.containerInformation .typing {
+    font-size: 1.9rem;
+    color: #fafafa;
+    text-align: center;
+}
+
+.containerInformation .subtitle {
+    font-size: 1.7rem;
+    font-style: italic;
+    color: #fafafa;
+    text-align: center;
+}
+
+.containerPartial {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}

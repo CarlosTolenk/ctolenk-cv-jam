@@ -1,7 +1,11 @@
 import React, {Props} from "react";
 import styles from './Menu.module.css';
-import MenuOption from "../menu-option/MenuOption";
+
+// ThirdParties
 import {faHome, faUniversity, faBriefcase, faBlog, faMailBulk} from "@fortawesome/free-solid-svg-icons";
+
+// Components
+import MenuOption from "../../atoms/menu-option/MenuOption";
 
 const Menu = ({className}: any) => {
 
